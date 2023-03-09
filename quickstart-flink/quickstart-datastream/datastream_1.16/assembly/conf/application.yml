@@ -22,10 +22,10 @@ flink:
     zookeeperNamespace:
     jobmanager:
   property: #@see: https://nightlies.apache.org/flink/flink-docs-release-1.15/docs/deployment/config/
-    $internal.application.main: org.apache.streampark.flink.quickstart.QuickStartApp
+    $internal.application.main: org.apache.streampark.flink.quickstart.datastream.QuickStartApp
     pipeline.name: streampark-quickstartApp
     yarn.application.queue:
-    taskmanager.numberOfTaskSlots: 1
+    taskmanager.numberOfTaskSlots: 4
     parallelism.default: 2
     jobmanager.memory:
       flink.size:
@@ -86,6 +86,6 @@ app:
   # mysql
   jdbc:
     driverClassName: com.mysql.cj.jdbc.Driver
-    jdbcUrl: jdbc:mysql://localhost:3306/test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false
+    jdbcUrl: jdbc:mysql://127.0.0.1:3306/flink?useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false
     username: root
-    password: 123322242
+    password: rootroot

@@ -25,7 +25,7 @@ flink:
     $internal.application.main: org.apache.streampark.quickstart.flink.flinksql.FlinkSqlJob
     pipeline.name: streampark quickstart flinksql job
     taskmanager.numberOfTaskSlots: 1
-    parallelism.default: 2
+    parallelism.default:
     jobmanager.memory:
       flink.size:
       heap.size:
